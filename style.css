@@ -22,11 +22,6 @@
     font-size: 45px;
 }
 
-#textocabecalho{
-    font-size: 40px;
-}
-
-
 /* Menu: alinhar o menu */
 #menu{
     background-color: #F9F9F9;
@@ -46,9 +41,9 @@
 
 #sobremim{
     margin-top: 100px;
-    display: grid;
-    grid-auto-flow: column;
-    columns: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 100px;
 }
 
@@ -65,6 +60,7 @@
 #texto{
     padding: 50px;
     margin-top: 100px;
+    align-items: center;
 }
 
 
@@ -111,4 +107,69 @@ button:hover{
     transform: translateY(-5px);
     box-shadow: 0px 15px 20px #ff6a19;
     transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+
+    #cabecalho{
+        padding: 10px;
+    }
+
+    #titulocabecalho {
+        font-size: 22px;
+    }
+
+    #textocabecalho {
+        font-size: 15px;
+    }
+
+    #menu {
+        padding: 10px;
+    }
+
+    .numero {
+        font-size: 16px;
+    }
+
+    .texto {
+        font-size: 8px;
+    }
+
+    #sobremim {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+    }
+    
+    #texto {
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .titulosobremim {
+        font-size: 16px;
+    }
+
+    .textosobremim {
+        font-size: 12px;
+    }
+
+    #imagem {
+        width: 80%;
+    }
+
+    #titulocontato {
+        font-size: 16px;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    button {
+        width: 50%;
+    }
 }
